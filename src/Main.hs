@@ -3,7 +3,9 @@ module Main where
 import qualified Data.Map.Strict as Map
 import Data.Char
 import Control.Applicative
-
+import Codec.Picture
+import Graphics.Rasterific
+import Graphics.Rasterific.Texture
 
 data LSystem symbol = LSystem (Map.Map symbol [symbol])
   deriving (Show)
